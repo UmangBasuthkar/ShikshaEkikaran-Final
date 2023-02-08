@@ -2,33 +2,6 @@ import React, {useState, SetState} from "react";
 import './GovernmentSignUp.css'
 
 export const GovernmentSignUp = () => {
-        const [firstName, setFirstName] = useState(null);
-        const [lastName, setLastName] = useState(null);
-        const [email, setEmail] = useState(null);
-        const [aadharCard, setaadharCard] = useState(null);
-        const [password, setPassword] = useState(null);
-
-        const handleInputChange = (e) => {
-            const {id, value} = e.target;
-            if (id == "firstName"){
-                setFirstName(value);
-            }
-            if (id == "lastName"){
-                setLastName(value);
-            }
-            if (id == "email"){
-                setEmail(value);
-            }
-            if (id == "aadharCard"){
-                setaadharCard(value);
-            }
-            if (id == "password"){
-                setPassword(value);
-            }
-        }
-    const handleSubmit = () => {
-        console.log(firstName, lastName, email, aadharCard, password);
-    }
     return (
         <>
         <br/><br/><br/>
