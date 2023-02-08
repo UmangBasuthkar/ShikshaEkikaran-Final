@@ -1,0 +1,37 @@
+.footer {
+    position: relative;
+    width: 100%;
+    padding-top: 50px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    padding-left: 80px;
+    background-color: black;
+    color: white;
+    text-align: left;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+nav, ul, li{
+    padding: 0 10px 0 10px;
+}
+li :hover {
+    background-color: grey;
+}
+.input1 {
+    width: 25%;
+}
+.button {
+  background-color: #C44900;
+  color: white;
+  padding: 5px;
+  border: none;
+  width: 500px;
+}
+button:hover {
+  opacity: 0.8;
+}
+@media screen and (max-width: 500px) {
+    input, .button {
+        width: 90%;
+    }
+}
