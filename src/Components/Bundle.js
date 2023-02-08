@@ -1,4 +1,4 @@
-import { Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Navbar } from './Navbar';
 import { Home } from './Home';
 import { Login } from './Login';
@@ -13,18 +13,20 @@ import { SchoolAndCollegeUpload } from './SchoolAndCollegeUpload';
 export const Bundle = () => {
     return (
         <>
-            <Navbar/>
-            <Routes>
-                <Route path = '/' element = { <Home/> }/>
-                <Route path = 'Login' element = { <Login/> }/>
-                <Route path = 'SignUpAs' element = {  <SignUpAs/> }/>
-                <Route path = "SchoolSignUp" element = {  <SchoolSignUp/> }/>
-                <Route path = "CollegeSignUP" element = {  <CollegeSignUp/> }/>
-                <Route path = "GovernmentSignUp" element = {  <GovernmentSignUp/> }/>
-                <Route path = "SchoolAndCollegeview" element = { <SchoolAndCollegeview />}/>
-                <Route path = "Governmentview" element = { <Governmentview />}/>
-                <Route path = "SchoolAndCollegeUpload" element = { <SchoolAndCollegeUpload/> } />
-            </Routes>
+            <BrowseRouter>
+                <Navbar/>
+                <Routes>
+                    <Route path = '/' element = { <Home/> }/>
+                    <Route path = 'Login' element = { <Login/> }/>
+                    <Route path = 'SignUpAs' element = {  <SignUpAs/> }/>
+                    <Route path = "SchoolSignUp" element = {  <SchoolSignUp/> }/>
+                    <Route path = "CollegeSignUP" element = {  <CollegeSignUp/> }/>
+                    <Route path = "GovernmentSignUp" element = {  <GovernmentSignUp/> }/>
+                    <Route path = "SchoolAndCollegeview" element = { <SchoolAndCollegeview />}/>
+                    <Route path = "Governmentview" element = { <Governmentview />}/>
+                    <Route path = "SchoolAndCollegeUpload" element = { <SchoolAndCollegeUpload/> } />
+                </Routes>
+            </BrowserRouter>
         </>
     )
 }
